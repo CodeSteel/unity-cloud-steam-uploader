@@ -216,7 +216,7 @@ namespace Game.Builder
 
         private static string CreateTempVdf(string buildPath, SteamBuildDepot depotInfo)
         {
-            string tempDir = Path.Combine(Path.GetTempPath(), "uts_steam_build");
+            string tempDir = Path.Combine(Path.GetTempPath(), "ucb_steam_build");
             Directory.CreateDirectory(tempDir);
 
             string vdfPath = Path.Combine(tempDir, $"app_build_{depotInfo.AppId}.vdf");
